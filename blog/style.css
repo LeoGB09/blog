@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    color: var(--cor-principal);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+:root{
+    --cor-principal: #fff;
+    --cor-secundaria: #F78CA2;
+    --cor-background-principal: #fff;
+    --cor-background-secundario: #F9DEC9;
+    --cor-titulo-pagina: #000;
+    --cor-botao: #ec748c;
+    --cor-botao-ativo:#e83d5f;
+}
+
+body{
+    background: var(--cor-background-secundario);
+    display: flex;
+    flex-direction: column;
+}
+
+/* INICIO CABEÇALHO */
+.cabecalho{
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    align-items: center; 
+}
+
+.titulo-blog{
+    color: var(--cor-titulo-pagina);
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 3vw;
+}
+/* FIM CABEÇALHO */
+
+/* INICIO DOS CORPOS */
+.inicio-corpo{
+    display: flex;
+    justify-content: center;
+}
+
+.corpo-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient( -0.2turn, #D80032, #e83a5d );
+    width: 80%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.body-feed{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0; 
+}
+/* FIM DOS CORPOS */
+/* AREA DE PUBLICAÇÃO */
+.perfil-detalhes{
+    display: flex;
+    align-items: center;
+}
+
+.btn-publicar{
+    border: solid 2px var(--cor-principal);
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.btn-publicar:hover{
+    transition: 0.2s;
+    background: var(--cor-botao);
+}
+
+.btn-publicar:active{
+    background: var(--cor-botao-ativo);
+}
+/* FIM AREA DE PUBLICAÇÃO */
+/* DESIGN DA CAIXA DE PERFIL*/
+.perfil-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* IMAGEM DA CAIXA DE PERFIL */
+.imagem-perfil{
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: solid 2px var(--cor-secundaria);
+}
+/* TAMANHO DA IMAGEM DE LOCALIZAÇÃO DO LADO DO NOME */
+.localizacao{
+    width:100%;
+}
+/* BORDA DAS POSTAGENS */
+.borda{
+    margin: 2rem 1rem;
+    border: solid 2px var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 10px;
+}
+/* RESPONSIVIDADE DO TEXTO DAS PUBLICAÇÕES */
+.texto-publicacao{
+    font-size: clamp(2em, 1em + 3vw 3em);
+}
+
